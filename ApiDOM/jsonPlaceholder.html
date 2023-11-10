@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+
+    <button>GET DATA</button>
+    <h1></h1>
+
+    <script>
+// <!--Js is  syncronous and single-threaded -->
+    //  let p = document.querySelector('p');
+    //  p.textContent='Danish is a great person';
+    //  console.log(p);
+    //  alert('Text set!');
+    //  p.style.color='green';
+    //  p.style.backgroundColor='aqua';
+
+    //  asynchronous
+    // let p = document.querySelector('p')
+    // p.textContent='danish is great person';
+    // console.log(p);
+    // setTimeout(()=>{
+    //     alert('TEXT SET!');
+
+    // },1000)
+    // p.style.color='black'
+    // p.style.backgroundColor='aqua'
+
+    // callback
+//     function a(){
+//         return 'PENCIL'
+//     }
+//   let b = a()
+//   console.log(b);
+   
+//   function calc(a,b,cb)
+//   {
+//    return cb(a,b)
+//   }
+//   let add = calc(10,15,(d,e)=>{return d+e})
+//   console.log(add);
+
+//   let sub =calc(50,30,(d,e)=>{return d-e})
+//   console.log(sub)
+
+//   let mul = calc(5,2,(d,e)=>{ return d*e})
+//   console.log(mul)
+
+//    callBack Hell (call back inside call back)
+//  function one(cb)
+//  {
+//     setTimeout(()=>{
+//         let a = 'car'
+//         console.log('One is called and it says ' + a);
+//         cb(a);
+//     },3000);
+//  }
+//  function two(para1,cb2)
+//  {
+//     setTimeout(()=>{
+//         let b= para1 + " "+"bus"
+//         console.log("Two is called and it says"+b);
+//         cb2(b)
+//     },3000);
+//  }
+//  function three(para2,cb3){
+//      setTimeout(()=>{
+//         let c= para2+" "+'cycle'
+//         console.log('three is called and it says'+c)
+//         cb3(c)
+//      },3000)
+//  }
+//      one((x)=>{
+//         two(x,(y)=>{
+//             three(y,(z)=>{
+//                 console.log('cb is called and says '+z)
+//             })
+//         })
+//      }) 
+   
+    // AJAX = Async js and XML
+    // it allow to communicate with web server in a async way , with ajax calls we can request data fromweb server dynamically
+
+    let btn = document.querySelector("button")
+    btn.addEventListener('click',one)
+    function one()
+    {
+        // console.log('clicked');
+        //  initiate the xHr obj
+
+        let xhr = new XMLHttpRequest()
+        console.log(xhr);
+        console.log(typeof xhr);
+
+        // open the object
+        xhr.open('GET','https://jsonplaceholder.typicode.com/users')
+        
+        // on progress
+        xhr.onprogress = function(){
+            console.log('loading DATA......');
+        }
+
+        // what to do when response is ready
+        xhr.onload = function()
+        {
+            alert('response is ready')
+            let data = JSON.parse(this.responseText)
+            console.log(data);
+        }
+        //  request will be sent
+        xhr.send()
+    }
+    
+
+    </script>
+</body>
+</html>

@@ -269,11 +269,11 @@
 //     })
 //     console.log(d);
 
-    let a = [950,3004,221,178,221,10019,3000]
-console.log(a);
+//     let a = [950,3004,221,178,221,10019,3000]
+// console.log(a);
 
-let b = Math.max.apply(null,a)
-console.log(b);
+// let b = Math.max.apply(null,a)
+// console.log(b);
 
-let c = Math.min.apply(null,a)
-console.log(c);
+// let c = Math.min.apply(null,a)
+// console.log(c);

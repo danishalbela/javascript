@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+    <style>
+        button i{
+           
+            font-size: 25px;
+        }
+        .card{
+            border: 3px solid red;
+            /* background-color: gray; */
+            width: 16%;
+            text-align: center;
+            padding: 15px;
+            margin: 50px auto;
+            border-radius: 25px;
+            box-shadow: 0 0 5px 10px yellow;
+        }
+        .fa-moon{
+        
+        display: none;
+        color:'white';
+        font-size: 25px;
+                }
+        .fa-sun{
+            
+        color:yellow;
+        font-size: 25px;
+                }
+
+    </style>
+</head>
+<body>
+    <button>
+        <i class="fa-regular fa-moon fa-beat-fade"></i>
+        <i class="fa-regular fa-sun fa-beat"></i>
+    </button>
+     
+     <div class="card">
+        <img height="150" width="150" src="./image/WhatsApp_Image_2023-09-13_at_5.52.08_PM-removebg-preview.png" alt="">
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga?</h3>
+
+    </div>
+   
+    <script>
+
+        let card= document.querySelector('.card')
+    
+        let moon = document.querySelector('.fa-moon')
+        let sun = document.querySelector('.fa-sun')
+         let btn = document.querySelector('button')
+         btn.addEventListener('click',one)
+            function one()
+             {
+                if(document.body.style.backgroundColor=='magenta')
+                 {
+                    document.body.style.backgroundColor='black'
+                    card.style.backgroundColor='wheat'
+                    card.style.boxShadow = '0 0 5px 10px wheat'
+                    sun.style.display='none'
+                    moon.style.display='inline-block'
+                 }else
+                  {
+                    document.body.style.backgroundColor='magenta';
+                    card.style.backgroundColor='gray';
+                    card.style.boxShadow = '0 0 5px 10px yellow';
+                    sun.style.display='inline-block';
+                    moon.style.display='none';
+                  }
+             }
+    </script>
+</body>
+</html> -->

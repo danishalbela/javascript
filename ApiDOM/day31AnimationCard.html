@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main{
+        border: 5px solid red;
+        height: 50vh;
+        width: 70vw;
+        margin:  0  auto;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fa-arrow-left{
+        font-size: 50px;
+        padding: 15px;
+        border: 2px solid red;
+        border-radius: 50%;
+        position: absolute;
+        left: 35px;
+        top: 45%;
+    }
+    .fa-arrow-right{
+        font-size: 50px;
+        padding: 15px;
+        border: 2px solid red;
+        border-radius: 50%;
+        position: absolute;
+        right: 35px;
+        top: 45%;
+    }
+</style>
+<body>
+    
+    <section class="main" style="background-image:url('https://images.unsplash.com/photo-1694721804143-7c611fde4b22?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D') ;"></section>
+    
+     <div class="buttons">
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+     </div>
+
+     <script>
+        let right=document.querySelector('.fa-arrow-right')
+        let left=document.querySelector('.fa-arrow-left')
+        let main=document.querySelector('.main')
+        
+        let arrofImg = [
+            'https://images.unsplash.com/photo-1697874088370-3f01297d65f7?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1692754107964-b0e0422ada3c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1692736933712-c757798b689b?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1694939200168-1eab019da48d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D'
+        ]
+        console.log(arrofImg);
+         
+        let num = 0
+
+        right.addEventListener('click',()=>{
+            num++
+            if(num >= arrofImg.length)
+            {
+                num=0
+            }
+            main.style.backgroundImage=`url(${arrofImg[num]})`
+            document.body.style.backgroundImage=`url(${arrofImg[num]})`
+            console.log(num);
+        })
+
+        left.addEventListener('click',()=>{
+            num--
+           if(num < 0)
+           {
+            num = 3
+           }
+           main.style.backgroundImage =`url(${arrofImg[num]})`
+           document.body.style.backgroundImage=`url(${arrofImg[num]})`
+           console.log(num);
+        })
+
+
+     </script>
+
+      
+</body>
+</html> -->

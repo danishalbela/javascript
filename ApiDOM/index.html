@@ -1,0 +1,306 @@
+<!-- <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        CSS only -->  
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">   
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"   
+          crossorigin="anonymous">   
+    <title>Document</title> 
+</head> 
+<body>  -->
+     
+    
+    <!-- <div class="container">   
+        <div class="row">   
+          <div class="col s12">   
+            <div id="main" class="card">   
+              <div class="card-content">   
+                <span class="card-title">Task List</span>   
+                <div class="row">   
+                  <form id="task-form">   
+                    <div class="input-field col s12">   
+                      <input type="text" name="task" id="task" value="Walk the dog">   
+                      <label style="color: blue;" for="task">New Task</label>   
+                    </div>   
+                </div>   
+                <input type="submit" value="Add Task" class="btn">   
+                </form>   
+              </div>   
+              <div class="card-action">   
+                <h5 id="task-title">Tasks</h5>   
+                <ul class="collection">   
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li><li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li><li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>   
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>   
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>   
+                </ul>   
+                <button class="clear-tasks btn black" href="#">Clear Tasks</button>   
+              </div>   
+            </div>   
+          </div>   
+        </div>   
+      </div> 
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>   
+     
+    -->
+
+     <script>
+      
+        //  let b = {name:'Danish'}
+        //  console.log(b)
+        //  console.log(b.name)
+        //  console.log(b["name"])
+        //  console.log(typeof b)
+
+        //   let a = document
+        //   a= document.all 
+        // //   a= document.all.length
+        //   console.log(a)
+
+        //   a=document.head
+        //   a=document.URL
+        //   a=document.forms
+        //   console.log(typeof a) 
+        //   console.log(a instanceof Array)
+        
+        // let b = document.scripts
+        // console.log(b)
+
+        // let e = document.links
+        // console.log(e)
+
+        // let f=Array.from(e)
+        // console.log(f)
+
+        //  let g = f.filter((ele,index)=>
+        //  {
+        //     return index%2 ==0
+        //  })
+        // console.log(g)
+
+        // g.forEach(element=>{
+        //     console.log(element);
+        // element.style.color="green";
+        // element.style.fontSize ="2rem";
+        // element.style.border ="3px solid black";
+        // element.style.padding="0px 55px"
+        // element.style.backgroundColor = "yellow"
+        // });
+        
+        // Target individual elements
+        // getElementById
+        // console.log(document.getElementById('task-title'));
+        // console.log(document.getElementById('task-title').id);
+        // console.log(document.getElementById('task-title').className);
+        // document.getElementById('task-title').style.color='aqua';
+        // document.getElementById('task-title').style.backgroundColor = 'black'
+        // document.getElementById('task-title').style.fontSize='30px'
+        //  document.getElementById('task-title').textContent='RealME'
+        // document.getElementById('task-title').innerHTML=`<span>BOAT</span>`
+         
+
+        // QuerySelector
+          
+        // console.log(document.querySelector('#task-title'));
+        // console.log(document.querySelector('.card-title'));
+        // console.log(document.querySelector('label'))
+
+        // document.querySelector('#task-title').style.color='red'
+        // document.querySelector('#task-title').style.backgroundColor='aqua'
+        // document.querySelector('.card-title').textContent='CardTitle'
+        // document.querySelector('label').textContent='JAMMIE VARDY'
+        
+        // let a = document.querySelector('.collection-item')
+        // console.log(a);
+        
+        // let b = document.querySelector('li:last-child')
+        // console.log(b);
+
+        // let b = document.querySelector('li:nth-child(2)')
+        // console.log(b);
+
+        // let b = document.querySelector('li:nth-child(odd)')
+        // console.log(b);
+
+        // let b = document.querySelector('li:nth-child(even)')
+        // console.log(b);
+
+        // Multiple Elements
+        // className
+        // let items = document.getElementsByClassName('collection-item');
+        // console.log(items);
+        
+        // items[0].style.color='green'
+        // items[0].style.fontSize='30px'
+          
+        // let itemsArray = Array.from(items);
+        // console.log(itemsArray);
+       
+        // for(let ans of itemsArray)
+        // {
+        //    ans.style.color='white'
+        //    ans.style.backgroundColor='red'
+        // }
+         
+        // let items = document.getElementsByClassName('collection-item');
+        // console.log(items);
+        
+        // for(let i=0; i<items.length; i++)
+        // {
+        //     if(i%2===0) continue
+        //     console.log(i);
+        //     items[i].style.fontSize='30px';
+
+        // }
+ 
+        // for(let i=0;i<items.length;i++)
+        // {
+        //  if(i%2 !== 0) continue
+        //  console.log(i);
+        //  items[i].style.fontSize='30px'
+        //  }
+
+        // console.log( document.getElementsByClassName('card-title'));
+        // console.log( document.querySelector('.card-title'));
+
+        // TagName
+        // let a = document.getElementsByTagName('label')
+        // console.log(a);
+        // a[0].style.fontSize='30px'
+       
+        // let a=document.getElementsByTagName('li')
+        // console.log(a)
+        // a[0].style.fontSize='40px';
+ 
+        // querySelectorAll = multiple items with tagname, classname,id
+
+        // let items = document.querySelectorAll('li')
+        //  console.log(items)
+        //   console.log([...items]);
+
+        // let items = document.querySelectorAll('.delete-items')
+        // console.log(items);
+
+        // const list = document.querySelector('ul.collection')
+        // console.log(list);
+        // const listItem = document.querySelector('li.collection-item:first-child')
+        // console.log(listItem);
+
+        // let a 
+        // a= list
+        // a-listItem
+        
+        // a=list.childNodes
+        // a=list.childNodes[1]
+        // a=list.childNodes[1].nodeName
+        // a=list.childNodes[1].nodeType
+
+        // 1= element
+        // 2= Attribute
+        // 3= Text Node
+        // 8 =Comment
+        // 9= Document Itself
+        // 10 =Doctype
+
+        // children
+        // a = list.children
+        // a= list.children[0]
+        // list.children[4].textContent='First Child'
+        // a=list.children[1].children
+
+        // a = list.firstChild
+        // a=list.lastChild
+        // a=list.firstElementChild
+        // a=list.lastElementChild
+        
+      //   Add New listitem
+        // const listItem = document.createElement('li')
+
+        // Add Class
+        // listitem.className='new-nav-item'
+
+        // Add Attribute and class
+        //  listItem.setAttribute('id','new-nav-id')
+        //  listItem.setAttribute('class','new-nav-item')
+        //  listItem.style.padding='10px  40px'
+        
+        //  enter content
+        //  listItem.textContent='new List Item'
+        //  listItem.innerText='new-list-item'
+
+
+        //  create text node
+        // let txt = document.createTextNode('New List Item')
+        // listItem.appendChild(txt)
+
+       
+        // append List Item
+        // let parent = document.querySelector('.collection')
+        // console.log(parent)
+        // parent.appendChild(listItem)
+
+        //  console.log(listItem)
+
+
+        //  Replace & Remove
+         
+      //   let newhead = document.createElement('h1')
+       
+      //   newhead.id='newhead-id';
+      //   newhead.textContenet = 'New Heading'
+
+      //   // oldhead
+      //   let oldHead = document.getElementById('task-title')
+      //   console.log(oldHead)
+
+      //   // parent
+      //   let cardAction = document.querySelector('card-action')
+      //   console.log(cardAction)
+
+      //   // Replace
+      //    cardAction.replaceChild(newHead,oldHead)
+      //    console.log(newhead);
+ 
+//       const changeBgRed = () => {
+//         document.body.firstElementChild.style.background = "red"
+//       }
+
+//       let b = document.body
+//        console.log("first child of body", b.firstChild)
+//        console.log("first element child of body",b.firstElementChild)
+
+
+
+//        </script>
+
+//        <script src="./practiceSet.js"></script>
+
+//   </body>
+//   </html> 

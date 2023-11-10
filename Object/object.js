@@ -144,41 +144,41 @@
 // console.log(Object.entries(a).flat(Infinity))
 // --------------------------------------------------
 
-let club = {
-    name:"Avul Qasim Ansari",
-    LocatedAt:"ImliTale Bahadurganj",
-    starters:['Garlic Bread','Milo','Tea'],
-    timings:{
-        mon:{
-            open:'8:00',
-            close:'6:00'
-        },
-        tue:{
-            open:'10:00',
-            close:'6:00'
-        },
-        wed:{
-            open:'11:00',
-            close:'6:00'
-        }
+// let club = {
+//     name:"Avul Qasim Ansari",
+//     LocatedAt:"ImliTale Bahadurganj",
+//     starters:['Garlic Bread','Milo','Tea'],
+//     timings:{
+//         mon:{
+//             open:'8:00',
+//             close:'6:00'
+//         },
+//         tue:{
+//             open:'10:00',
+//             close:'6:00'
+//         },
+//         wed:{
+//             open:'11:00',
+//             close:'6:00'
+//         }
 
-    }
-}
-console.log(club);
-console.log(Object.keys(club));
-console.log(Object.values(club));
-console.log(Object.entries(club));
-console.log('*********');
+//     }
+// }
+// console.log(club);
+// console.log(Object.keys(club));
+// console.log(Object.values(club));
+// console.log(Object.entries(club));
+// console.log('*********');
 
-console.log(club.name);
-console.log(club.starters);
-console.log(club.LocatedAt);
-console.log(club.timings);
-console.log(club.timings.mon.open);
-console.log(club.timings.mon.close);
-console.log(club.timings.tue.close);
-console.log(club.timings.wed.open);
-console.log('*********');
+// console.log(club.name);
+// console.log(club.starters);
+// console.log(club.LocatedAt);
+// console.log(club.timings);
+// console.log(club.timings.mon.open);
+// console.log(club.timings.mon.close);
+// console.log(club.timings.tue.close);
+// console.log(club.timings.wed.open);
+// console.log('*********');
 
-console.log(club["LocatedAt"]);
-console.log(club["timings"]["mon"]["close"]);
+// console.log(club["LocatedAt"]);
+// console.log(club["timings"]["mon"]["close"]);

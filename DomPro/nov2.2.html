@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden; 
+         margin: 0;
+      }
+      .container{
+        /* border: 2px solid red ; */
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+      }
+      .panel{
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: azure;
+        border-radius: 50px;
+        height: 80vh;
+        margin: 0 10px;
+        flex: 0.5;
+        cursor: pointer;
+        position: relative;
+
+        transition: all 1s ease-in-out;
+      }
+      .panel h3{
+        font-size: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        opacity: 0;
+        margin: 0;
+      }
+      .panel.active{
+        flex: 5;
+      }
+      .panel.active h3{
+        opacity: 1;
+        color:yellow;
+        left: 45%;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      @media (max-width:480px)
+      {
+        .container{
+            width: 100vw;
+        }
+        .panel.active h3{
+            font-size: 20px;
+            left: 35%;
+        }
+        .panel:nth-of-type(4),.panel:nth-of-type(5){
+            display: none;
+        }
+      }
+  
+    </style>
+</head>
+
+<body>
+    
+   <div class="container">
+    <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1610189012906-4c0aa9b9781e?auto=format&fit=crop&q=80&w=2074&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h3>BANARSI SILK SAREE.</h3>
+    </div> 
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h3>BANARSI SILK SAREE.</h3>
+    </div>
+    <div class="panel a" style="background-image: url('https://images.unsplash.com/photo-1616429321229-733d6a7ff456?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h3>BANARSI SILK SAREE.</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1609748513078-9ff6232781c5?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h3>BANARSI SILK SAREE.</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1610189335437-3cbce21d9d5f?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h3>BANARSI SILK SAREE.</h3>
+    </div>
+   </div>
+
+   <script>
+     let panels = document.querySelectorAll('.panel')
+     console.log(panels);
+
+     panels.forEach((ele)=>{
+        ele.addEventListener('click',function()
+        {
+           
+            removeActiveClass()
+            ele.classList.add('active');
+        })
+     })
+     function removeActiveClass()
+     {
+        panels.forEach(ele=>[ele.classList.remove('active')])
+     }
+   </script> 
+</body>
+</html>
